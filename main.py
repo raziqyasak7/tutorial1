@@ -1,8 +1,5 @@
 import streamlit as st
 
-# ================= PAGE CONFIG =================
-st.set_page_config(page_title="My Resume", page_icon="📄", layout="wide")
-
 # ================= HEADER =================
 st.markdown("<h1 style='text-align: center;'>📄 My Resume</h1>", unsafe_allow_html=True)
 st.write("")
@@ -11,46 +8,31 @@ st.write("")
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image("https://via.placeholder.com/150", caption="Your Photo", width=150)  # Replace with your image URL
+    # Replace this link with your real photo (GitHub, LinkedIn, or local file: "myphoto.jpg")
+    st.image("https://via.placeholder.com/200", caption="Abdul Raziq", width=200)
 
 with col2:
-    st.subheader("John Doe")
+    st.subheader("Abdul Raziq Bin Mohd Yasak")
     st.write("""
-    - 📧 **Email:** johndoe@example.com  
-    - 📱 **Phone:** +123 456 7890  
-    - 🔗 [LinkedIn](https://www.linkedin.com/in/johndoe)  
-    - 💻 [GitHub](https://github.com/johndoe)  
+    - 📧 **Email:** raziqyasak10@gmail.com  
+    - 📱 **Phone:** 011-11112707  
+    - 🔗 [LinkedIn](https://www.linkedin.com/in/raziqyasak10)  
+    - 💻 [GitHub](https://github.com/raziqyasak7)  
     """)
 st.write("---")
 
 # ================= EDUCATION =================
 st.header("🎓 Education")
 st.write("""
-**Bachelor of Computer Science** – University of Technology (2019 – 2023)  
-- First Class Honors  
-- Final Year Project: *Smart Irrigation System using IoT*
-""")
-st.write("---")
-
-# ================= WORK EXPERIENCE =================
-st.header("💼 Work Experience")
-st.write("""
-**Software Engineer – ABC Tech** (2023 – Present)  
-- Built full-stack web applications using **Python, Django, React**.  
-- Optimized database queries, improving performance by 30%.  
-- Integrated APIs for payment systems and real-time dashboards.  
-
-**Intern – XYZ Solutions** (2022 – 2023)  
-- Developed **data pipelines** using Pandas & SQL.  
-- Assisted in **customer dashboards** with Streamlit and Power BI.  
+**Bachelor Of Information Technology With Honours** – University Malaysia Kelantan (2022 – 2026)  
+- Final Year Project: *Smart FireFighting Robot With Real-Time Fire Detection*
 """)
 st.write("---")
 
 # ================= SKILLS =================
 st.header("🛠 Skills")
 cols = st.columns(3)
-skills = ["Python", "Django", "Streamlit", "React", "SQL", 
-          "Machine Learning", "Data Analysis", "IoT Systems", "Git/GitHub"]
+skills = ["Python", "SQL", "Machine Learning", "Data Analysis", "IoT Systems", "Git/GitHub"]
 for i, skill in enumerate(skills):
     cols[i % 3].write(f"- {skill}")
 st.write("---")
@@ -58,33 +40,54 @@ st.write("---")
 # ================= PROJECTS =================
 st.header("🚀 Projects & Achievements")
 
-st.subheader("1. Smart Irrigation System (IoT)")
-st.write("""
-- Built an **IoT-based irrigation system** with soil sensors & ESP32.  
-- Integrated with mobile app for real-time monitoring.  
-- Helped reduce water usage by 25%.  
-""")
+# ---- Project 1 ----
+col1, col2 = st.columns([1.5, 2])
+with col1:
+    st.image("https://via.placeholder.com/300x200", caption="Smart Medical Box")  # replace with real image
+with col2:
+    st.subheader("1. Smart Medical Box (IoT)")
+    st.write("""
+    - Developed a **smart medical box with 3 slots** to store medicines.  
+    - Integrated with **ESP32** to control notifications and buzzer alerts.  
+    - At the scheduled time, the system triggers a **buzzer sound** and **notification** to remind users to take their medication.  
+    - Designed to improve **medication adherence** for patients with chronic illnesses and elderly users.  
+    """)
 
-st.subheader("2. Online Cooperative Store (COOP UMK App)")
-st.write("""
-- Developed a **Flutter app** for students to check item availability in real-time.  
-- Integrated **barcode scanner** for product price details.  
-- Implemented **online payment & pick-up system** (no queues).  
-""")
+# ---- Project 2 ----
+col1, col2 = st.columns([1.5, 2])
+with col1:
+    st.image("https://via.placeholder.com/300x200", caption="COOP UMK App")  # replace with real image
+with col2:
+    st.subheader("2. Online Cooperative Store (COOP UMK App)")
+    st.write("""
+    - Developed a **Flutter app** for students to check item availability in real-time.  
+    - Integrated **barcode scanner** for product price details.  
+    - Implemented **online payment & pick-up system** (no queues).  
+    """)
 
-st.subheader("3. Smart Firefighting Robot (FYP)")
-st.write("""
-- Built a **robot with flame sensors, GPS, and camera module**.  
-- Implemented real-time fire detection with ESP32 + Streamlit dashboard.  
-- Can auto-detect fire hotspots and send alerts.  
-""")
+# ---- Project 3 ----
+col1, col2 = st.columns([1.5, 2])
+with col1:
+    st.image("https://via.placeholder.com/300x200", caption="Smart Firefighting Robot")  # replace with real image
+with col2:
+    st.subheader("3. Smart Firefighting Robot (FYP)")
+    st.write("""
+    - Built a **robot with flame sensors, GPS, and camera module**.  
+    - Implemented real-time fire detection with ESP32 + Streamlit dashboard.  
+    - Can auto-detect fire hotspots and send alerts.  
+    """)
 
-st.subheader("4. Solar Tracking with Smart Street Lights")
-st.write("""
-- Designed a **solar panel tracker** using LDR sensors + servo motor.  
-- Integrated **automatic street light control** based on sunlight.  
-- Increased efficiency of solar harvesting by ~18%.  
-""")
+# ---- Project 4 ----
+col1, col2 = st.columns([1.5, 2])
+with col1:
+    st.image("https://via.placeholder.com/300x200", caption="Solar Tracking & Smart Lights")  # replace with real image
+with col2:
+    st.subheader("4. Solar Tracking with Smart Street Lights")
+    st.write("""
+    - Designed a **solar panel tracker** using LDR sensors + servo motor.  
+    - Integrated **automatic street light control** based on sunlight.  
+    - Increased efficiency of solar harvesting by ~18%.  
+    """)
 
 st.write("---")
 
