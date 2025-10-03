@@ -8,8 +8,7 @@ st.write("")
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    # Replace this link with your real photo (GitHub, LinkedIn, or local file: "myphoto.jpg")
-    st.image("https://via.placeholder.com/200", caption="Abdul Raziq", width=200)
+    st.image("images/profile.jpg", caption="Abdul Raziq", width=200)  # Profile photo
 
 with col2:
     st.subheader("Abdul Raziq Bin Mohd Yasak")
@@ -43,7 +42,7 @@ st.header("🚀 Projects & Achievements")
 # ---- Project 1 ----
 col1, col2 = st.columns([1.5, 2])
 with col1:
-    st.image("https://via.placeholder.com/300x200", caption="Smart Medical Box")  # replace with real image
+    st.image("images/medical_box.jpg", caption="Smart Medical Box")  
 with col2:
     st.subheader("1. Smart Medical Box (IoT)")
     st.write("""
@@ -56,7 +55,7 @@ with col2:
 # ---- Project 2 ----
 col1, col2 = st.columns([1.5, 2])
 with col1:
-    st.image("https://via.placeholder.com/300x200", caption="COOP UMK App")  # replace with real image
+    st.image("images/coop_app.jpg", caption="COOP UMK App")  
 with col2:
     st.subheader("2. Online Cooperative Store (COOP UMK App)")
     st.write("""
@@ -68,7 +67,7 @@ with col2:
 # ---- Project 3 ----
 col1, col2 = st.columns([1.5, 2])
 with col1:
-    st.image("https://via.placeholder.com/300x200", caption="Smart Firefighting Robot")  # replace with real image
+    st.image("images/firefighting_robot.jpg", caption="Smart Firefighting Robot")  
 with col2:
     st.subheader("3. Smart Firefighting Robot (FYP)")
     st.write("""
@@ -80,7 +79,7 @@ with col2:
 # ---- Project 4 ----
 col1, col2 = st.columns([1.5, 2])
 with col1:
-    st.image("https://via.placeholder.com/300x200", caption="Solar Tracking & Smart Lights")  # replace with real image
+    st.image("images/solar_tracker.jpg", caption="Solar Tracking & Smart Lights")  
 with col2:
     st.subheader("4. Solar Tracking with Smart Street Lights")
     st.write("""
@@ -91,5 +90,4 @@ with col2:
 
 st.write("---")
 
-# ================= FOOTER =================
-st.markdown("<p style='text-align: center;'>Made with ❤️ using Streamlit</p>", unsafe_allow_html=True)
+
