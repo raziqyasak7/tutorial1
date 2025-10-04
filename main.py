@@ -15,7 +15,6 @@ with col2:
     st.write("""
     - 📧 **Email:** raziqyasak10@gmail.com  
     - 📱 **Phone:** 011-11112707  
-    - 🔗 [LinkedIn](https://www.linkedin.com/in/raziqyasak10)  
     - 💻 [GitHub](https://github.com/raziqyasak7)  
     """)
 st.write("---")
