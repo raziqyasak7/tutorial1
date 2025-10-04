@@ -1,8 +1,8 @@
 import streamlit as st
 
 # ================= HEADER =================
-st.markdown("<h1 style='text-align: center;'>📄 My Resume</h1>", unsafe_allow_html=True)
-st.write("")
+st.markdown("<h1 style='text-align: center;'> My Resume</h1>", unsafe_allow_html=True)
+st.write("---")
 
 # ================= PERSONAL INFO =================l
 col1, col2 = st.columns([1, 2])
@@ -21,7 +21,7 @@ with col2:
 st.write("---")
 
 # ================= EDUCATION =================
-st.header("🎓 Education")
+st.header("Education")
 st.write("""
 **Bachelor Of Information Technology With Honours** – University Malaysia Kelantan (2022 – 2026)  
 - Final Year Project: *Smart FireFighting Robot With Real-Time Fire Detection*
@@ -37,7 +37,7 @@ for i, skill in enumerate(skills):
 st.write("---")
 
 # ================= PROJECTS =================
-st.header("🚀 Projects & Achievements")
+st.header("Projects & Achievements")
 
 # ---- Project 1 ----
 col1, col2 = st.columns([1.5, 2])
