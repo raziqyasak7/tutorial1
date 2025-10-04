@@ -4,7 +4,7 @@ import streamlit as st
 st.markdown("<h1 style='text-align: center;'>📄 My Resume</h1>", unsafe_allow_html=True)
 st.write("")
 
-# ================= PERSONAL INFO =================
+# ================= PERSONAL INFO =================l
 col1, col2 = st.columns([1, 2])
 
 with col1:
